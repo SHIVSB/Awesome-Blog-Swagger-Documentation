@@ -19,7 +19,7 @@ const options = {
         description: "Development server",
       },
       {
-        url: "https://bloggingwebsite-backend.herokuapp.com/",
+        url: "https://bloggingwebsite-backend.herokuapp.com/api/v1/",
         description: "Production Server",
       },
     ],
