@@ -1,0 +1,27 @@
+openapi: 3.0.0
+info:
+  description: Backend server docs for Enterios-Serverless
+  version: "1.0.0"
+  title: Enterios-Serverless
+servers:
+  - description: Dev Server
+    url: http://localhost:7071/api/
+  - description: Prod Server
+    url: "https://bloggingwebsite-backend.herokuapp.com/"
+
+paths:
+
+  /:
+    get:
+      tags:
+        - Fetches home page info
+      summary: Fetches home page info
+      security:
+        - Bearer: []
+      responses:
+        "200":
+          description: Home page info fetched successfully
+        "400":
+          description: Invalid input
+        "500":
+          description: Internal Server Error
